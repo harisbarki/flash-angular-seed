@@ -4,6 +4,7 @@ import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 
 import {AppComponent} from './app.component';
+import {TasksService} from './shared';
 import {NavbarComponent} from './components/';
 import {AppRoutingModule, routingComponents} from './app.routes';
 
@@ -20,6 +21,7 @@ import {AppRoutingModule, routingComponents} from './app.routes';
 		AppRoutingModule
 	],
 	providers: [
+		TasksService
 	],
 	bootstrap: [AppComponent]
 })
